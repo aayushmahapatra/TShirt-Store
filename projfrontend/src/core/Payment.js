@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
-import {loadCart, cartEmpty} from './helper/CartHelper';
-import {Link} from 'react-router-dom';
+import {cartEmpty} from './helper/CartHelper';
 import {getMeToken, processMyPayment} from './helper/paymentBHelper';
 import {createOrder} from './helper/OrderHelper';
 import {isAuthenticated} from '../auth/helper';
@@ -54,7 +53,7 @@ const Payment = ({products, setReload = f => f, reload = undefined}) => {
 
   useEffect(() => {
     getToken(userId, token);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const onPurchase = () => {
     setInfo({loading: true});

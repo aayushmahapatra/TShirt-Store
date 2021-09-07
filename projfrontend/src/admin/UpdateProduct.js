@@ -27,10 +27,7 @@ const UpdateProduct = ({match}) => {
     description,
     price,
     stock,
-    photo,
     categories,
-    category,
-    loading,
     error,
     createdProduct,
     getRedirect,
@@ -68,7 +65,7 @@ const UpdateProduct = ({match}) => {
 
   useEffect(() => {
     preload(match.params.productId);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleChange = name => event => {
     const value = name === 'photo' ? event.target.files[0] : event.target.value;

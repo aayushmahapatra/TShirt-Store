@@ -6,21 +6,20 @@ import {getProducts} from './helper/coreapicalls';
 
 const Home = () => {
   const [products, setProducts] = useState([]);
-  const [error, setError] = useState(false);
 
   const loadAllProducts = () => {
     getProducts().then(data => {
-      if (data.error) {
-        setError(data.error);
+      if (data === undefined) {
+        console.log('Unexpected error!');
       } else {
         setProducts(data);
       }
-    });
+    }).catch();
   };
 
   useEffect(() => {
     loadAllProducts();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <Base title='Home Page' description='Welcome to the Tshirt Store'>

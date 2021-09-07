@@ -27,10 +27,7 @@ const AddProduct = () => {
     description,
     price,
     stock,
-    photo,
     categories,
-    category,
-    loading,
     error,
     createdProduct,
     getRedirect,
@@ -39,7 +36,6 @@ const AddProduct = () => {
 
   const preload = () => {
     getCategories().then(data => {
-      console.log(data);
       if (data.error) {
         setValues({...values, error: data.error});
       } else {
@@ -50,7 +46,7 @@ const AddProduct = () => {
 
   useEffect(() => {
     preload();
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleChange = name => event => {
     const value = name === 'photo' ? event.target.files[0] : event.target.value;

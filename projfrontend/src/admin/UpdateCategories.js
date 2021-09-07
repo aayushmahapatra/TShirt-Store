@@ -33,7 +33,7 @@ const UpdateCategories = ({match}) => {
 
   useEffect(() => {
     preload(match.params.categoryId);
-  }, []);
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const handleChange = event => {
     setError('');

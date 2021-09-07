@@ -33,13 +33,13 @@ const Cart = () => {
     );
   };
 
-  const loadCheckout = () => {
-    return (
-      <div>
-        <h2>This sections is for checkout</h2>
-      </div>
-    );
-  };
+  // const loadCheckout = () => {
+  //   return (
+  //     <div>
+  //       <h2>This sections is for checkout</h2>
+  //     </div>
+  //   );
+  // };
 
   return (
     <Base title='Cart Page' description='Ready to checkout'>
