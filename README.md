@@ -2,6 +2,8 @@
 
 E-commerce website for selling TShirts. 
 
+View website at: https://optimistic-haibt-3aa18e.netlify.app/
+
 This project was created using MERN Stack.
 
 * Server: NodeJS
