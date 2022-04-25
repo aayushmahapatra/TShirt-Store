@@ -1,51 +1,32 @@
-# TShirt-Store
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## TShirt-Store
 
 E-commerce website for selling TShirts. 
 
-View website at: https://optimistic-haibt-3aa18e.netlify.app/
+> Language: JavaScript \
+> Frameworks: Nodejs, Express and React \
+> Database: MongoDB
 
-This project was created using MERN Stack.
+[Try the live demo!](https://optimistic-haibt-3aa18e.netlify.app/)
 
-* Server: NodeJS
+### To Run Locally:
+Clone the repository and perform the following command line actions in the `projbackend` directory:
 
-* Framework: Express
+```bash
+npm install
+# and then
+npm start
+```
 
-* Database: MongoDB
+And the following command line actions in the `projfrontend` directory:
 
-* FrontEnd: ReactJS
+```bash
+npm install
+# and then
+npm start
+```
 
-# Available Scripts
-In the project directory, you can run:
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-### nodemon run start
-Runs this command.
-Open http://localhost:3000 to view it in the browser.
-
-### npm start
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
-
-The page will reload if you make edits.
-You will also see any lint errors in the console.
-
-### npm test
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
-
-### npm run build
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best###.
-
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
-
-See the section about deployment for more information.
-
-### npm run eject
-Note: this is a one-way operation. Once you eject, you can’t go ###!
-
-If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+The page will reload if you make edits. You will also see any lint errors in the console.
